@@ -273,10 +273,10 @@ header nav ul li a {
   
   .faq-item {
     /* border: 1px solid #ddd; */
-    border-radius: 0px;
-    margin-bottom: 10px;
+    /* border-radius: 0px; */
+    /* margin-bottom: 0px; */
     overflow: hidden;
-    padding: 2%;
+    /* padding: 2%; */
     /* background-color: #f9f9f9; */
   }
   /* .faq-question::after{
@@ -336,7 +336,32 @@ header nav ul li a {
     padding: 5%;
     line-height: 1.5;
   }
-  
+  /* VIVEK-CARD SECTION 2 */
+  .vivek-card-2{
+    height: 28rem;
+    position: relative;
+    background: linear-gradient(180deg, #B023C2,#6D0FE1);
+    text-align: center;
+  }
+  .vivek-card-2 p{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 9%;
+    font-weight: bold;
+  }
+  .vivek-card-2 .vivek-btn{
+    margin-top: 2%;
+    border-radius: 2rem;
+    border: none;
+    /* padding: 0.5rem; */
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+    width: 14%;
+    height: 12%;
+  }
+  .vivek-card-2 .vivek-btn:hover{
+    transform: scale(1.1);
+  }
   /* Footer */
   footer {
     background: #000;
