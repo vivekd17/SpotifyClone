@@ -273,42 +273,41 @@ header nav ul li a {
   
   .faq-item {
     /* border: 1px solid #ddd; */
-    border-radius: 8px;
+    border-radius: 0px;
     margin-bottom: 10px;
     overflow: hidden;
+    padding: 2%;
     /* background-color: #f9f9f9; */
   }
+  /* .faq-question::after{
+    background-color: #666;
+    border-bottom: #000;
+  } */
   .faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
     cursor: pointer;
+    padding: 2%;
     list-style: none; /* Remove default bullet point or marker */
   }
-  
   .faq-question::after {
     content: ">"; /* Dropdown icon */
     font-size: 2rem;
-    color: #333;
+    color: #333333;
     rotate: 90deg;
     margin-left: 10px;
     transition: transform 0.3s ease;
   }
-  
+  .faq-question:hover{
+    background-color: rgba(128, 128, 128, 0.397);
+    
+  }
   details[open] .faq-question::after {
     transform: rotate(-180deg); /* Rotate the arrow when open */
   }
   
-  /* .faq-question {
-    padding: 15px;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000000;
-    cursor: pointer; */
-    /* background-color: #f7f7f7; */
-  /* } */
   .faq-section h2{
     color: black;
     text-align: center;
@@ -318,19 +317,25 @@ header nav ul li a {
   .faq-question a{
     list-style: none;
     color: black;
+    
   }
   .faq-answer {
-    padding: 15px;
-    font-size: 1rem;
-    color: #555;
-    background-color: #fff;
-  }
-  /* summary.faq-question::marker{
     padding-left: 2rem;
+    padding-top: 2%;
+    font-size: 1.2rem;
+    color: #212121;
+    background-color: #fff;
+    line-height: 1.5;
+    
   }
-  details[open] {
-    border-color: #ffffff;
-  } */
+  .faq-answer span{
+    color: green;
+    font-weight: bolder;
+  }
+  .faq-answer p{
+    padding: 5%;
+    line-height: 1.5;
+  }
   
   /* Footer */
   footer {
