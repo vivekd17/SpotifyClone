@@ -45,6 +45,9 @@ header nav ul li {
     position: relative;
 }
 
+header nav ul li a:hover{
+  color: #1ED760;
+}
 header nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -195,8 +198,6 @@ header nav ul li a {
     flex: 1 1 calc(25% - 20px); /* Adjust the size of each card */
     /* background: #fff; */
     padding: 15px;
-    /* border: 1px solid #ddd; */
-    /* border-radius: 8px; */
     text-align: center;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
@@ -283,6 +284,9 @@ header nav ul li a {
     background-color: #666;
     border-bottom: #000;
   } */
+  .faq-item:hover{
+    text-decoration: underline solid black;
+  }
   .faq-question {
     display: flex;
     justify-content: space-between;
@@ -315,9 +319,12 @@ header nav ul li a {
     padding-bottom: 5%;
   }
   .faq-question a{
-    list-style: none;
+    text-decoration: none;
     color: black;
-    
+  }
+  .faq-section hr{
+    height: 0.2rem;
+    opacity: 0.2;
   }
   .faq-answer {
     padding-left: 2rem;
@@ -329,7 +336,7 @@ header nav ul li a {
     
   }
   .faq-answer span{
-    color: green;
+    color: #1ED760;
     font-weight: bolder;
   }
   .faq-answer p{
@@ -342,7 +349,19 @@ header nav ul li a {
     position: relative;
     background: linear-gradient(180deg, #B023C2,#6D0FE1);
     text-align: center;
+    /* overflow: hidden; */
   }
+  /* .vivek-card-2::after{
+    content: "";  
+    position: absolute;
+    width: 52%;
+    height: 100%; */
+    /* margin-right: 30%; */
+    /* overflow: hidden; */
+    /* z-index: 1;*/
+    /* background: url('./Assets/fourDotTop.svg') no-repeat center center;
+    opacity: 0.9;
+   }  */
   .vivek-card-2 p{
     font-size: 5rem;
     text-align: center;
@@ -365,11 +384,81 @@ header nav ul li a {
   /* Footer */
   footer {
     background: #000;
-    color: #fff;
+    color: #919496;
     text-align: center;
     padding: 1rem 0;
+    width: 100%;
+    display: flex;
+  }
+  .vivek-footer1{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    /* gap: 5%; */
+    /* margin: auto; */
+    height: 28rem;
+  }
+
+  /* Footer Logo */
+  .footer-logo{
+    height: 10%;
+    width: 30%;
+    margin: -18%  0  0 2%;
+  }
+  .footer-logo img{
+    height: 100%;
+    width: 100%;
+  }
+  .footer-col-1{
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  /* footer col 1 */
+  .footer-col-1 ul{
+    list-style-type: none;
+  }
+  .footer-col-1 ul li{
+    gap: 5%;
+    padding-top: 10%;
+    color: rgb(255, 255, 255);
+  }
+  .footer-col-1 ul li:hover{
+    color: #1ED760;
+  }
+  .footer-col-1 h2{
+    font-size: 1.3rem;
+    margin: 0;
+    width: 100%;
+  }
+
+
+  /* social icons */
+  .footer-right {
+    display: flex;
+    gap: 1.2rem; /* Space between icons */
+    margin: 5%;
+    padding: 2%;
   }
   
+  .icon {
+    background-color: rgb(100, 100, 100);
+    width: 2.9rem; /* Icon width */
+    height: 2.9rem; /* Icon height */
+    border-radius: 12%; /* Makes them circular, if desired */
+    /* object-fit: cover; Ensures image fits perfectly */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+  }
+  
+  
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .hero {
@@ -386,3 +475,24 @@ header nav ul li a {
     }
   }
   
+  .end-part ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-left: 5%;
+    font-size: 0.8rem;
+    color: grey;
+  }
+  .end-part ul li:hover{
+    color: #1ED760;
+  }
+  .end-part{
+    display: flex;
+    padding: 2%;
+  }
+  .end-part p{
+    float: right;
+    padding-left: 40%;
+    font-size: 80%;
+    color: grey;
+  }
