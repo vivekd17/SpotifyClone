@@ -17,8 +17,8 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Aligns items to the edges */
-    align-items: center; /* Vertically centers items */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 /* Header */
@@ -66,30 +66,27 @@ header nav ul li a {
 }
 
 .hero::before {
-    content: ""; /* Required to display the pseudo-element */
+    content: ""; 
     position: absolute;
     top: 0;
     left: 0;
     margin: -5% -25%;
     width: 180%;
     height: 160%;
-    background: url('./Assets/ThreeDot.svg') no-repeat center center; /* Replace with your SVG URL */
-    /* background-size: contain; Adjust size as needed */
-    /* z-index: 1; Ensure it is above the background */
-    opacity: 0.9; /* Optional: Add transparency */
+    background: url('./Assets/ThreeDot.svg') no-repeat center center;
+    opacity: 0.9; 
 }
 
 .hero-content {
-    position: relative; /* Ensure content is above the pseudo-element */
+    position: relative; 
     z-index: 2;
-    color: white; /* Ensure content is visible */
+    color: white; 
 }
 
   
   .hero .hero-text {
     max-width: 100%;
     position: absolute;
-    /* margin: 18%; */
   }
   
   .hero h1 {
@@ -116,60 +113,18 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
     margin: 10% 0% 0% 29%;
-    /* transition: transform 0.3s ease; */
   }
-  /* .hero .btn:hover{
-    transform: scale(1.1);
-  } */
+
   .hero .hero-image img {
     max-width: 100%;
     border-radius: 15px;
     object-fit: cover; /* Ensures the image covers the container proportionally */
     display: block;
     position: relative;
-    /* margin-left: 35%; */
     margin: -2% -1% -22% 80%;
   }
   
   /* Features Section */
-  /* .features {
-    background: #fff;
-    color: #000;
-    text-align: center;
-    padding: 3rem 0;
-    display: flex;
-  }
-  
-  .features h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .feature-cards {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .vivek-card {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 10px;
-    max-width: 250px;
-    text-align: center;
-  }
-  
-  .vivek-card img {
-    margin-bottom: 1rem;
-  }
-  
-  .vivek-card h3 {
-    margin-bottom: 0.5rem;
-  } */
-
-
-
   .features {
     padding: 20px;
     background-color: #f9f9f9;
@@ -180,7 +135,6 @@ header nav ul li a {
     padding-top: 5%;
     text-align: center;
     font-size: 2.5rem;
-    /* margin-bottom: 20px; */
     color: #333;
     font-weight: bold;
   }
@@ -195,18 +149,10 @@ header nav ul li a {
   }
   
   .vivek-card {
-    flex: 1 1 calc(25% - 20px); /* Adjust the size of each card */
-    /* background: #fff; */
+    flex: 1 1 calc(25% - 20px);
     padding: 15px;
     text-align: center;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
   }
-  
-  /* .vivek-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  } */
   
   .vivek-card img {
     width: 150px;
@@ -240,29 +186,6 @@ header nav ul li a {
   }
 
   /* FAQ Section */
-  /* .faq {
-    background: #ffffff;
-    color: #000000;
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
-  .faq h2 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    padding-top: 2%;
-  }
-  
-  .faq ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .faq ul li {
-    margin: 0.5rem 0;
-  } */
-  
-
   .faq-section {
     padding: 3rem 18rem 2rem 20rem;
     font-family: Arial, sans-serif;
@@ -273,17 +196,8 @@ header nav ul li a {
 }
   
   .faq-item {
-    /* border: 1px solid #ddd; */
-    /* border-radius: 0px; */
-    /* margin-bottom: 0px; */
     overflow: hidden;
-    /* padding: 2%; */
-    /* background-color: #f9f9f9; */
   }
-  /* .faq-question::after{
-    background-color: #666;
-    border-bottom: #000;
-  } */
   .faq-item:hover{
     text-decoration: underline solid black;
   }
@@ -294,7 +208,7 @@ header nav ul li a {
     font-size: 1.2rem;
     cursor: pointer;
     padding: 2%;
-    list-style: none; /* Remove default bullet point or marker */
+    list-style: none; 
   }
   .faq-question::after {
     content: ">"; /* Dropdown icon */
@@ -343,25 +257,15 @@ header nav ul li a {
     padding: 5%;
     line-height: 1.5;
   }
+
   /* VIVEK-CARD SECTION 2 */
   .vivek-card-2{
     height: 28rem;
     position: relative;
     background: linear-gradient(180deg, #B023C2,#6D0FE1);
     text-align: center;
-    /* overflow: hidden; */
   }
-  /* .vivek-card-2::after{
-    content: "";  
-    position: absolute;
-    width: 52%;
-    height: 100%; */
-    /* margin-right: 30%; */
-    /* overflow: hidden; */
-    /* z-index: 1;*/
-    /* background: url('./Assets/fourDotTop.svg') no-repeat center center;
-    opacity: 0.9;
-   }  */
+  
   .vivek-card-2 p{
     font-size: 5rem;
     text-align: center;
@@ -372,7 +276,6 @@ header nav ul li a {
     margin-top: 2%;
     border-radius: 2rem;
     border: none;
-    /* padding: 0.5rem; */
     font-size: 1.2rem;
     transition: transform 0.2s ease;
     width: 14%;
@@ -381,6 +284,7 @@ header nav ul li a {
   .vivek-card-2 .vivek-btn:hover{
     transform: scale(1.1);
   }
+
   /* Footer */
   footer {
     background: #000;
@@ -394,8 +298,6 @@ header nav ul li a {
     display: flex;
     width: 70%;
     align-items: center;
-    /* gap: 5%; */
-    /* margin: auto; */
     height: 28rem;
   }
 
@@ -416,6 +318,7 @@ header nav ul li a {
     padding: 0;
     position: relative;
   }
+
   /* footer col 1 */
   .footer-col-1 ul{
     list-style-type: none;
@@ -438,23 +341,22 @@ header nav ul li a {
   /* social icons */
   .footer-right {
     display: flex;
-    gap: 1.2rem; /* Space between icons */
+    gap: 1.2rem; 
     margin: 5%;
     padding: 2%;
   }
   
   .icon {
     background-color: rgb(100, 100, 100);
-    width: 2.9rem; /* Icon width */
-    height: 2.9rem; /* Icon height */
-    border-radius: 12%; /* Makes them circular, if desired */
-    /* object-fit: cover; Ensures image fits perfectly */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 2.9rem;
+    height: 2.9rem; 
+    border-radius: 12%; 
+    cursor: pointer; 
     transition: transform 0.2s ease;
   }
   
   .icon:hover {
-    transform: scale(1.1); /* Slight enlargement on hover */
+    transform: scale(1.1);
   }
   
   
