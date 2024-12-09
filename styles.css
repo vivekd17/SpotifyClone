@@ -77,11 +77,11 @@ header nav ul li a {
     opacity: 0.9; 
 }
 
-.hero-content {
+/* .hero-content {
     position: relative; 
     z-index: 2;
     color: white; 
-}
+} */
 
   
   .hero .hero-text {
@@ -118,7 +118,7 @@ header nav ul li a {
   .hero .hero-image img {
     max-width: 100%;
     border-radius: 15px;
-    object-fit: cover; /* Ensures the image covers the container proportionally */
+    object-fit: cover; 
     display: block;
     position: relative;
     margin: -2% -1% -22% 80%;
@@ -223,7 +223,7 @@ header nav ul li a {
     
   }
   details[open] .faq-question::after {
-    transform: rotate(-180deg); /* Rotate the arrow when open */
+    transform: rotate(-180deg);
   }
   
   .faq-section h2{
@@ -264,27 +264,42 @@ header nav ul li a {
     position: relative;
     background: linear-gradient(180deg, #B023C2,#6D0FE1);
     text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
   }
   
   .vivek-card-2 p{
     font-size: 5rem;
     text-align: center;
-    padding-top: 9%;
+    padding: 9% 0 0 30%;
     font-weight: bold;
+    position: absolute;
   }
   .vivek-card-2 .vivek-btn{
-    margin-top: 2%;
+    margin: 16% 0 0 -5%;
     border-radius: 2rem;
     border: none;
     font-size: 1.2rem;
     transition: transform 0.2s ease;
     width: 14%;
     height: 12%;
+    position: absolute;
   }
   .vivek-card-2 .vivek-btn:hover{
     transform: scale(1.1);
   }
 
+  .vivek-card-2::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -5% -25%;
+    width: 160%;
+    height: 160%;
+    background: url('./Assets/ThreeDot.svg') no-repeat center center;
+    opacity: 0.9; 
+}
   /* Footer */
   footer {
     background: #000;
